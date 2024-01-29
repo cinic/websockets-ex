@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+.input em {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+}
+
+.input:hover em,
+*:hover > .input em {
+  display: block;
+}
+
+.copy,
+.delete {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: blueviolet;
+}
+
+.controls:hover .copy,
+.controls:hover .delete {
+  display: block;
+}
